@@ -23,7 +23,7 @@ start
 
 split
 {
-	if (current.missionComplete < old.missionComplete) {return true;}
+	if (current.missionComplete > old.missionComplete) {return true;}
 	if (current.janglesStatus < old.janglesStatus) {return true;}
 }
 
@@ -31,3 +31,4 @@ isLoading
 {
 	return (current.loading == 1);
 }
+
